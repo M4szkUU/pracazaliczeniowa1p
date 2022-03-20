@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<body>#include <cstdlib><br>
+#include <iostream><br>
+#include <math.h><br>
+using namespace std;<br>
+int main(int argc, char *argv[])<br>
+{<br>
+ cout<<"podaj liczbe do sprawdzenia- ";<br>
+ int pierwsza_mas;<br>
+ int suma_mas;<br>
+ int k=0;<br>
+ cin>>pierwsza_mas;<br>
+ cout<<"podaj druga liczbe do sprawdzenia- ";<br>
+ int druga_mas;<br>
+ int n=0;<br>
+ cin>>druga_mas;<br>
+ for(int i=2;i<=sqrt(pierwsza_mas);++i)<br>
+ for(int i=2;i<=sqrt(druga_mas);++i)<br>
+ {<br>
+if ((pierwsza_mas) % i==0)<br>
+if ((druga_mas) % i==0)<br>
+{<br>
+k=1;<br>
+n=1;<br>
+cout<<"liczba "<<pierwsza_mas<<" to nie jest liczba pierwsza jest podzielna przez "<<i<<", "<<druga_mas<<"tez nie jest pierwsza jest podzielna przez "<<i<<"\n";<br>
+ }<br>
+ }<br>
+ {<br>
+ if ( k==0);<br>
+ if ( n==0);<br>
+ suma_jun=(pierwsza_mas+druga_mas);<br>
+ if (suma_mas%2==0)<br>
+ {<br>
+ cout<<"liczba "<<pierwsza_mas<<" to jest liczba pierwsza, "<<druga_mas<<" tez jest liczba pierwsza, ich suma wynosi "<<suma_mas<<", jest parzysta"<<"\n";<br>
+}<br>
+}<br>
+{<br>
+if ( k==0);<br>
+if ( n==0);<br>
+suma_jun=(pierwsza_mas+druga_mas);<br>
+if (suma_mas%2==1)<br>
+ {<br>
+cout<<"liczba "<<pierwsza_mas<<" to jest liczba pierwsza, "<<druga_mas<<" tez jest liczba pierwsza, ich suma wynosi "<<suma_mas<<", jest nieparzysta"<<"\n";<br>
+}<br>
+}<br>
+ system("PAUSE");<br>
+ return EXIT_SUCCESS;<br>
+}<br>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>#include <cstdlib><br>
+#include <iostream><br>
+#include <windows.h><br>
+using namespace std;<br>
+void gotoxy(int x, int y)<br>
+{<br>
+COORD coord;<br>
+coord.X = x;<br>
+coord.Y = y;<br>
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);<br>
+}<br>
+int main(int argc, char *argv[])<br>
+{<br>
+system("chcp 1250");<br>
+int x,y,D_jun;<br>
+cout<<" Podaj zmienna (kolumne ekranu) x="; <br>
+cin>>x;<br>
+cout<<" Podaj zmienna (wiersz ekranu) y=";<br>
+cin>>y;<br>
+cout<<" Podaj dlugosc linii D=";<br>
+cin>>D_jun; // zmienna z trzema literami<br>
+<br>
+ for (int i=1;i<=D_jun/2;i++) // pierwsza polowa linii<br>
+// dzielone przez 2 bo polowa, tak x+i-D_jun/2<br>
+// bo trzeba przesunac sie w lewo o polowe dlugosci linii<br>
+{<br>
+gotoxy(x+i-D_jun/2,y);<br>
+cout<<"-";<br>
+}<br>
+{<br>
+for (int i=1;i<=D_jun/2;i++)<br>
+{<br>
+gotoxy(x-y-D_jun/2,i);<br>
+cout<<"-";<br>
+}<br>
+}<br>
+system("PAUSE");<br>
+return EXIT_SUCCESS;<br>
+}<br>
+</body>
+</html>

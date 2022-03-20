@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+#include <cstdlib><br>
+#include <iostream><br>
+<br>
+using namespace std;<br>
+<br>
+int main(int argc, char *argv[])<br>
+{<br>
+system("chcp 1250");<br>
+int gora_mas;<br>
+cout<<"podaj górną granicę obliczania sumy=";<br>
+cin>>gora_mas;<br>
+int dol_mas;<br>
+cout<<"podaj dolną granicę obliczania sumy=";<br>
+cin>>dol_mas;<br>
+int suma_mas=0;<br>
+for(int dzialanie=gora_mas;dzialanie<=dol_mas;dzialanie++)<br>
+{<br>
+suma_mas+=dzialanie;<br>
+}<br>
+cout<<"suma="<<suma_mas<<endl;<br>
+system("PAUSE");<br>
+return EXIT_SUCCESS;<br>
+}<br>
+</body>
+</html>

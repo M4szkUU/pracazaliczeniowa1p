@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>#include <cstdlib><br>
+#include <iostream><br>
+<br>
+using namespace std;<br>
+<br>
+int main(int argc, char *argv[])<br>
+{<br>
+int m,n,r,m1,n1;<br>
+system("chcp 1250");<br>
+do<br>
+{<br>
+    cout<<"n>=m"<<endl;<br>
+    cout<<"Podaj n="<<endl;<br>
+    cin>>n;<br>
+    cout<<"Podaj m="<<endl;<br>
+    cin>>m;<br>
+    if (n<m) <br>
+    {<br>
+    cout<<"n musi być >=m"<<endl; <br>
+    }<br>
+m1=m;<br>
+n1=n;<br>
+}<br>
+while(!(n>=m));<br>
+<br>
+do<br>
+{<br>
+r=(n%m), n=m, m=r;<br>
+}<br>
+while(!(m==0));<br>
+cout<<"NWD=("<<n1<<","<<m1<<")="<<n<<endl;<br>
+    system("PAUSE");<br>
+    return EXIT_SUCCESS;<br>
+}<br>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<body>
+<h2>1. Znaleziona liczba pierwsza dla liczby 1000+10*100+15</h2>
+101117
+
+<h2>2. Definicja liczby pierwszej</h2>
+Liczba pierwsza to liczba naturalna n>1, dla ktorej istnieja tylko dwa dzielniki naturalne: 1 i n.
+
+<h2>3. Najwieksza znaleziona liczba pierwsza</h2>
+282589933-1
+
+<h2>4. Opis algorytmu do znajdowania liczb pierwszych</h2>
+Sprawdzamy czy kolejne liczby naturalne od 2 do pierwiastek(n) sa podzielnikami liczby n. Sprawdzenie podzielnosci odbywa sie poprzez uzycie funkcji % (MOD->reszta z dzielenia), jesli reszta z dzielenia jest zero to oznacza to, ze liczba n jest podzielna przez liczbe mniejsza od n i n nie jest liczba pierwsza. Nalezy zauwazyc, ze nie jest konieczne sprawdzanie kolejnych liczb naturalnych do 2 do n a wystarczy do pierwiastek(n). Zmienna k ma wartosc domyslnie zero. Po zakonczeniu programu sprawdzamy wartosc zmiennej k, jesli jest rowna zero oznacza to, ze liczba n jest pierwsza, jesli nie (czyli jeden) to liczba nie jest pierwsza. Zmiana k zmieniana jest na wartosc jeden gdy liczba n jest podzielna przez kolejna liczbe naturalna mniejsza od pierwiastka(n).
+</body>
+</html>
